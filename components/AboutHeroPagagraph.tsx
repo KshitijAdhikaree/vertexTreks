@@ -1,11 +1,20 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { Typewriter } from "react-simple-typewriter";
 
 export default function AboutHeroParagraph() {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return null; // render nothing on SSR
+
   return (
-    <div className="mt-6 text-gray-600 max-w-full mx-auto px-4 sm:px-6 text-center">
-      <p className="text-base sm:text-lg md:text-xl leading-relaxed whitespace-nowrap">
+    <div className="mt-6 text-gray-600 max-w-3xl mx-auto px-4 sm:px-6 text-center overflow-x-auto">
+      <p className="text-base sm:text-lg md:text-xl font-semibold leading-relaxed whitespace-nowrap">
         <Typewriter
           words={[
             "Adventure",
@@ -15,12 +24,12 @@ export default function AboutHeroParagraph() {
             "Himalayas",
             "Unforgettable",
           ]}
-          loop={0} // 0 = infinite
+          loop={0}
           cursor
           cursorStyle="|"
-          typeSpeed={50}
-          deleteSpeed={30}
-          delaySpeed={2000}
+          typeSpeed={80}
+          deleteSpeed={50}
+          delaySpeed={1500}
         />
       </p>
     </div>
