@@ -22,7 +22,7 @@ export default function ContactPage() {
       </div>
 
       {/* Contact Form Container */}
-      <div className="bg-gray-50 p-8 rounded-2xl shadow-lg max-w-4xl mx-auto">
+      <div className="bg-gray-100 p-8 rounded-2xl shadow-lg max-w-4xl mx-auto">
         <form className="grid grid-cols-1 md:grid-cols-2 gap-6 text-black">
           <input
             type="text"

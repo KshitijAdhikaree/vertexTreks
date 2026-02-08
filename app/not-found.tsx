@@ -13,11 +13,11 @@ export default function NotFoundPage() {
           alt="Page Not Found"
           width={1024}
           height={768}
-          className="rounded-xl object-cover w-full h-100 sm:h-125 md:h-150"
+          className="rounded-xl object-cover w-full h-full sm:h-125 md:h-150"
         />
 
         {/* Overlay */}
-        <div className="absolute inset-0 bg-black/40 rounded-xl flex flex-col items-center justify-center text-center px-6">
+        <div className="absolute inset-0 bg-black/60 rounded-xl flex flex-col items-center justify-center text-center px-6">
           <h1 className="text-6xl sm:text-7xl font-extrabold text-white mb-4">
             404
           </h1>
