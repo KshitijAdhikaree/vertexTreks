@@ -13,12 +13,14 @@ export default function NotFoundPage() {
           alt="Page Not Found"
           width={1024}
           height={768}
-          className="rounded-xl object-cover w-full h-[400px] sm:h-[500px] md:h-[600px]"
+          className="rounded-xl object-cover w-full h-100 sm:h-125 md:h-150"
         />
 
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/40 rounded-xl flex flex-col items-center justify-center text-center px-6">
-          <h1 className="text-6xl sm:text-7xl font-extrabold text-white mb-4">404</h1>
+          <h1 className="text-6xl sm:text-7xl font-extrabold text-white mb-4">
+            404
+          </h1>
           <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-4">
             Page Not Found
           </h2>
@@ -28,7 +30,7 @@ export default function NotFoundPage() {
           </p>
           <Link
             href="/"
-            className="inline-block px-6 py-3 bg-gradient-to-r from-blue-600 via-blue-500 to-blue-700 text-white font-semibold rounded-lg shadow-lg hover:from-blue-700 hover:via-blue-600 hover:to-blue-800 transition-all duration-500"
+            className="bg-navy text-white px-5 py-2 rounded-lg hover:opacity-90"
           >
             Go Back Home
           </Link>
