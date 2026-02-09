@@ -14,7 +14,7 @@ const treks: Trek[] = [
     duration: "14 Days",
     difficulty: "Moderate–Challenging",
     altitude: "5,364m",
-    image: "/trek/everest.jpg",
+    image: "/trek/everest.jpg ",
   },
   {
     title: "Annapurna Circuit Trek",
