@@ -24,9 +24,10 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-8 text-navy">
-          <Link href="/treks" className="hover:text-glacier">
-            Treks
+          <Link href="/activities" className="hover:text-glacier">
+            Activities
           </Link>
+
           <Link href="/about" className="hover:text-glacier">
             About
           </Link>
@@ -77,9 +78,10 @@ export default function Navbar() {
       {menuOpen && (
         <div className="md:hidden bg-white border-t">
           <div className="flex flex-col px-6 py-4 space-y-4 text-navy">
-            <Link href="/treks" onClick={() => setMenuOpen(false)}>
-              Treks
+            <Link href="/activities" onClick={() => setMenuOpen(false)}>
+              Activities
             </Link>
+
             <Link href="/about" onClick={() => setMenuOpen(false)}>
               About
             </Link>
